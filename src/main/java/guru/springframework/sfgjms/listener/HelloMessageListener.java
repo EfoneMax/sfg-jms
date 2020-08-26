@@ -43,7 +43,7 @@ public class HelloMessageListener {
 
         HelloWorldMessage payloadMsg = HelloWorldMessage
                 .builder()
-                .id(UUID.randomUUID())
+                .uuid(UUID.randomUUID())
                 .message("World!!")
                 .build();
 
