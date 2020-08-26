@@ -2,13 +2,15 @@ package guru.springframework.sfgjms.sender;
 
 import guru.springframework.sfgjms.config.JmsConfig;
 import guru.springframework.sfgjms.model.HelloWorldMessage;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 
 import java.util.UUID;
 
-@AllArgsConstructor
+@Component
+@RequiredArgsConstructor
 public class HelloSender {
     private final JmsTemplate jmsTemplate;
 
