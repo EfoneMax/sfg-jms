@@ -23,7 +23,7 @@ public class HelloSender {
 
     @Scheduled(fixedRate = 2000)
     public void sendMessage() {
-        System.out.println("I'm sending a message");
+     //   System.out.println("I'm sending a message");
         HelloWorldMessage message = HelloWorldMessage.builder()
                 .uuid(UUID.randomUUID())
                 .message("Hello world message")
