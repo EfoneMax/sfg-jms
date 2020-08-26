@@ -7,7 +7,9 @@ import org.springframework.jms.support.converter.MessageType;
 
 @Configuration
 public class JmsConfig {
-    public MessageConverter messageConverter(){
+    public static final String MY_QUEUE = "my-hello-world";
+
+    public MessageConverter messageConverter() {
         MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
         converter.setTargetType(MessageType.TEXT);
         converter.setTypeIdPropertyName("_type");
